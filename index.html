@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=\, initial-scale=1.0" />
     <title>Calculator</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script>
       function insert(num) {
         document.form.textview.value = document.form.textview.value + num;
@@ -36,14 +36,27 @@
       <table>
         <tr>
           <td>
-            <input class="button" type="button" value="C" onclick="clean()" />
-          </td>
-          <td>
-            <input class="button" type="button" value="<" onclick="back()" />
+            <input
+              class="button"
+              type="button"
+              style="background-color: grey;"
+              value="C"
+              onclick="clean()"
+            />
           </td>
           <td>
             <input
               class="button"
+              type="button"
+              style="background-color: grey;"
+              value="<"
+              onclick="back()"
+            />
+          </td>
+          <td>
+            <input
+              class="button"
+              style="background-color: orange"
               type="button"
               value="/"
               onclick="insert('/')"
@@ -52,6 +65,7 @@
           <td>
             <input
               class="button"
+              style="background-color: orange"
               type="button"
               value="X"
               onclick="insert('*')"
@@ -71,6 +85,7 @@
           <td>
             <input
               class="button"
+              style="background-color: orange"
               type="button"
               value="-"
               onclick="insert('-')"
@@ -91,6 +106,7 @@
             <input
               class="button"
               type="button"
+              style="background-color: orange"
               value="+"
               onclick="insert('+')"
             />
@@ -108,7 +124,7 @@
           </td>
           <td rowspan="5">
             <input
-              style="height: 106px"
+              style="height: 106px; background-color: orange"
               class="button"
               type="button"
               value="="
